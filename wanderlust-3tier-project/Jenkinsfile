@@ -240,7 +240,7 @@ pipeline {
                     sh '''
                         echo "🚀 Deploying on host with docker compose..."
                         ssh -o StrictHostKeyChecking=no parth@172.18.0.1 '
-                            cd /home/parth//Desktop/DevOps_Project/wanderlust-3tier-project &&
+                            cd /home/parth/DevOps_Project/wanderlust-3tier-project &&
                             docker compose pull &&
                             docker compose up -d
                         '
