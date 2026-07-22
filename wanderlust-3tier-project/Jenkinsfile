@@ -126,7 +126,7 @@ pipeline {
             steps {
                 dir('wanderlust-3tier-project') {
                     sh '''
-                        docker build -t ${BACKEND_IMAGE}:${IMAGE_TAG} -f ./backend/Dockerfile_optimised  ./backend
+                        docker build -t ${BACKEND_IMAGE}:${IMAGE_TAG} -f ./backend/Dockerfile_optimized  ./backend
                         docker build -t ${FRONTEND_IMAGE}:${IMAGE_TAG} -f ./frontend/Dockerfile_optimized ./frontend
                     '''
                 }
