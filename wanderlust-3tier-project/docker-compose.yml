@@ -10,7 +10,7 @@ services:
 
   backend:
     container_name: backend
-    iamge: ppurkar2003/wanderlust-backend:latest
+    image: ppurkar2003/wanderlust-backend:latest
     build: ./backend
     environment:
       - MONGODB_URI=mongodb://mongo/wanderlust
@@ -22,7 +22,7 @@ services:
 
   frontend:
     container_name: frontend
-    iamge: ppurkar2003/wanderlust-frontend:latest
+    image: ppurkar2003/wanderlust-frontend:latest
     build: ./frontend
     environment:
       - VITE_API_PATH=http://localhost:5000
