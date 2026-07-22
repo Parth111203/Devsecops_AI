@@ -220,8 +220,8 @@ pipeline {
                         echo "${DOCKER_TOKEN}" | docker login -u ppurkar2003 --password-stdin
 			
 			#Tag images as latest
-			docker tag ${BACKEND_IMAGE}:${IMAGE TAG} ${BACKEND_IMAGE}:latest
-			docker tag ${FRONTEND_IMAGE}:${IMAGE TAG} ${FRONTEND_IMAGE}:latest
+			docker tag ${BACKEND_IMAGE}:${IMAGE_TAG} ${BACKEND_IMAGE}:latest
+			docker tag ${FRONTEND_IMAGE}:${IMAGE_TAG} ${FRONTEND_IMAGE}:latest
 			
 			#Push latest tag
 			docker push ${BACKEND_IMAGE}:latest
